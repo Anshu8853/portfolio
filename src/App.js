@@ -216,7 +216,7 @@ export default function App() {
             <CardContent>
               <h3 className="text-xl font-semibold text-white">How I Built My Amazon Clone</h3>
               <p className="text-gray-400">
-                A walkthrough of tools, design choices, challenges, and features...
+              I built an Amazon Clone from scratch using the MERN stack. I handled user authentication using Firebase, created backend APIs with Node.js and Express, and stored data like products and orders in MongoDB Atlas. The frontend was developed using React, with components for product cards, search, cart, and checkout. I used Tailwind CSS for styling and Framer Motion for animations. Stripe was integrated for payment processing. The app is fully responsive and deployed on Vercel.
               </p>
             </CardContent>
           </Card>
