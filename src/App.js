@@ -167,17 +167,23 @@ export default function App() {
             >
               <Github className="w-5 h-5" /> github.com/Anshu8853
             </a>
-            <button
-  onClick={() => {
-    const link = document.createElement("a");
-    link.href = process.env.PUBLIC_URL + "/resume.pdf";
-    link.download = "Anshul_Resume.pdf";
-    link.click();
-  }}
-  className="text-green-500 underline"
->
-  ⬇️ Download My Resume
-</button>
+            <div className="flex gap-6 mt-4">
+  <a
+    href={process.env.PUBLIC_URL + "/resume.pdf"}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-400 underline"
+  >
+    📄 View Resume
+  </a>
+  <a
+    href={process.env.PUBLIC_URL + "/resume.pdf"}
+    download
+    className="text-green-400 underline"
+  >
+    ⬇️ Download Resume
+  </a>
+</div>
 
 
 
