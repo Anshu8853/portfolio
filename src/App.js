@@ -25,14 +25,15 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-white p-4">
       <section className="max-w-5xl mx-auto py-16 text-center">
-        <motion.img
-          src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif"
-          alt="Code Animation"
-          className="mx-auto rounded-xl mb-6 w-32 h-32 object-cover"
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 0.8 }}
-        />
+      <motion.img
+  src={process.env.PUBLIC_URL + "/anshul.jpg"}
+  alt="Anshul Verma"
+  className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-slate-800 shadow-md object-cover"
+  initial={{ scale: 0}}
+  animate={{ scale: 1.4 }}
+  transition={{ duration: 0.8 }}
+/>
+
         <motion.h1
           className="text-5xl font-extrabold mb-3 text-cyan-400"
           initial={{ opacity: 0, y: -50 }}
@@ -48,7 +49,7 @@ export default function App() {
           transition={{ delay: 0.5 }}
         >
           Full Stack Developer | CSE @ Chandigarh University | Passionate about
-          building real-world projects using MERN Stack, Java, Python & ML.
+          building real-world projects using MERN Stack, Java, Python.
         </motion.p>
       </section>
 
@@ -75,7 +76,7 @@ export default function App() {
           <Card>
             <CardContent>
               <img
-                src="https://media.giphy.com/media/SS8CV2rQdlYNLtBCiF/giphy.gif"
+                src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnRrZTJjMjRvMWltaHNxeGVzMWN0MHZnOWQxdDd4Ynpmd3gzYWhvbSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/RbDKaczqWovIugyJmW/giphy.gif"
                 alt="Amazon Clone"
                 className="rounded-md mb-3 w-full h-48 object-cover"
               />
@@ -89,7 +90,7 @@ export default function App() {
           <Card>
             <CardContent>
               <img
-                src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif"
+                src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnRrZTJjMjRvMWltaHNxeGVzMWN0MHZnOWQxdDd4Ynpmd3gzYWhvbSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/bGgsc5mWoryfgKBx1u/giphy.gif"
                 alt="Face Mask Detection"
                 className="rounded-md mb-3 w-full h-48 object-cover"
               />
@@ -103,7 +104,7 @@ export default function App() {
           <Card>
             <CardContent>
               <img
-                src="https://media.giphy.com/media/l3vR1n4bL9WjY4LNK/giphy.gif"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-sYOGrpXA-9vOBgiTb0FOAi2zx4AwlsxYAnRwLTRbjYl0hIWfBWwtMY0EC04olYZtYkI&usqp=CAU"
                 alt="Street Light"
                 className="rounded-md mb-3 w-full h-48 object-cover"
               />
@@ -131,10 +132,13 @@ export default function App() {
           <h2 className="text-3xl font-bold text-lime-400 mt-8">📈 Skills</h2>
           <div className="space-y-2">
             {[
+                { name: "C++ / C", color: "bg-red-400", level: "90%" },
+                { name: "Java", color: "bg-orange-400", level: "85%" },
+               { name: "Python ", color: "bg-purple-400", level: "65%" },
               { name: "JavaScript", color: "bg-yellow-400", level: "85%" },
               { name: "React & Node.js", color: "bg-blue-400", level: "80%" },
               { name: "MongoDB", color: "bg-green-400", level: "70%" },
-              { name: "Python / ML", color: "bg-purple-400", level: "65%" },
+             
             ].map((skill, i) => (
               <div key={i}>
                 <p>{skill.name}</p>
@@ -167,6 +171,14 @@ export default function App() {
             >
               <Github className="w-5 h-5" /> github.com/Anshu8853
             </a>
+            
+            <a
+  href="tel:+918853273544"
+  className="flex items-center gap-2 text-gray-200 hover:underline"
+>
+  📱 +91-8853273544
+</a>
+
             <div className="flex gap-6 mt-4">
   <a
     href={process.env.PUBLIC_URL + "/resume.pdf"}
@@ -185,21 +197,11 @@ export default function App() {
   </a>
 </div>
 
-
-
-
-
-
-
-
-
-
-
           </div>
 
           <motion.img
-            src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif"
-            alt="Cat typing"
+            src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnRrZTJjMjRvMWltaHNxeGVzMWN0MHZnOWQxdDd4Ynpmd3gzYWhvbSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/L1R1tvI9svkIWwpVYr/giphy.gif"
+            alt="Shut Down"
             className="rounded-lg mt-6 mx-auto w-3/4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
