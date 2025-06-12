@@ -161,19 +161,34 @@ export default function App() {
               <Linkedin className="w-5 h-5" /> linkedin.com/in/anshul-verma-03a37724a
             </a>
             <a
-              href="https://github.com/AnshulVerma03"
+              href="https://github.com/Anshu8853"
               target="_blank"
               className="flex items-center gap-2 text-white hover:underline"
             >
               <Github className="w-5 h-5" /> github.com/Anshu8853
             </a>
-            <a
-              href="/resume.pdf"
-              target="_blank"
-              className="flex items-center gap-2 text-pink-400 hover:underline"
-            >
-              <FileText className="w-5 h-5" /> View My Resume
-            </a>
+            <button
+  onClick={() => {
+    const link = document.createElement("a");
+    link.href = process.env.PUBLIC_URL + "/resume.pdf";
+    link.download = "Anshul_Resume.pdf";
+    link.click();
+  }}
+  className="text-green-500 underline"
+>
+  ⬇️ Download My Resume
+</button>
+
+
+
+
+
+
+
+
+
+
+
           </div>
 
           <motion.img
