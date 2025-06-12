@@ -214,22 +214,50 @@ export default function App() {
       <motion.section className="max-w-4xl mx-auto py-16">
         <h2 className="text-4xl font-bold text-center text-orange-400 mb-10">📝 Blog Highlights</h2>
         <div className="space-y-4">
-          <Card>
-            <CardContent>
-              <h3 className="text-xl font-semibold text-white">How I Built My Amazon Clone</h3>
-              <p className="text-gray-400">
-              I built an Amazon Clone from scratch using the MERN stack. I handled user authentication using Firebase, created backend APIs with Node.js and Express, and stored data like products and orders in MongoDB Atlas. The frontend was developed using React, with components for product cards, search, cart, and checkout. I used Tailwind CSS for styling and Framer Motion for animations. Stripe was integrated for payment processing. The app is fully responsive and deployed on Vercel.
-              </p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardContent>
-              <h3 className="text-xl font-semibold text-white">Getting Started with MongoDB</h3>
-              <p className="text-gray-400">
-                Basics of MongoDB for beginners and how I used it in full stack apps.
-              </p>
-            </CardContent>
-          </Card>
+        <motion.div
+  className="bg-slate-800 rounded-xl p-6 border border-slate-600 shadow-md"
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+>
+  <img
+    src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3amNsbXk2eXJpcGUzbmRtNGN2YW1pc3kwdWV5dnJneXF2eWNzdXk2cCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/H03PuVdwREB21ANkLX/giphy.gif"
+    alt="Amazon Clone"
+    className="rounded-md mb-4 w-full h-48 object-cover"
+  />
+  <h3 className="text-2xl font-semibold text-cyan-300 mb-2">🛍️ How I Built My Amazon Clone</h3>
+  <p className="text-gray-300 text-sm leading-relaxed">
+    I built an Amazon Clone from scratch using the <strong>MERN stack</strong>. I handled
+    user authentication using <strong>Firebase</strong>, created backend APIs with <strong>Node.js</strong> and
+    <strong> Express</strong>, and stored data like products and orders in <strong>MongoDB Atlas</strong>. The frontend
+    was developed using <strong>React</strong>, with components for product cards, search, cart, and
+    checkout. I used <strong>Tailwind CSS</strong> for styling and <strong>Framer Motion</strong> for animations.
+    <strong> Stripe</strong> was integrated for payment processing. The app is fully responsive and
+    deployed on <strong>Vercel</strong>.
+  </p>
+</motion.div>
+
+<motion.div
+  className="bg-slate-800 rounded-xl p-6 border border-slate-600 shadow-md"
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, delay: 0.2 }}
+>
+  <img
+    src="https://media.giphy.com/media/0IBekV40KIUjEYvvnS/giphy.gif"
+    alt="MongoDB Tutorial"
+    className="rounded-md mb-4 w-full h-48 object-cover"
+  />
+  <h3 className="text-2xl font-semibold text-green-300 mb-2">🍃 Getting Started with MongoDB</h3>
+  <p className="text-gray-300 text-sm leading-relaxed">
+    In this blog, I explain the basics of <strong>MongoDB</strong> — a NoSQL database that stores data in flexible, JSON-like documents.
+    I covered concepts like collections, documents, and queries using <strong>Mongoose</strong> in Node.js.
+    I also showed how I used MongoDB in real-world full stack projects like my Amazon Clone,
+    storing product data, user profiles, and orders in the cloud via <strong>MongoDB Atlas</strong>.
+    This blog is a great intro for anyone starting full-stack development with the <strong>MERN stack</strong>.
+  </p>
+</motion.div>
+
         </div>
       </motion.section>
     </div>
